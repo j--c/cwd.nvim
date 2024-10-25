@@ -1,5 +1,7 @@
 # cwd.nvim
 
+ONLY PARTIALLY COMPLETE - under construction
+
 Change or swap your current Neovim working directory more easily.
 
 <br>
@@ -30,18 +32,13 @@ Using dein:
 
 There are two main functions:
 
-1. cwd(new_wd, {opts})
-2. swd(swp_wd, {opts})
-
-<br>
-
-#### 1. cwd - Change Working Directory
+#### 1. cwd(new_wd, {opts}) - Change Working Directory
 
 cwd allows you to change the current Neovim working directory.  Send the new directory as a parameter, or wait for the prompt and type the directory of your choice.
 
 <br>
 
-#### 2. swd - Swap Working Directory
+#### 2. swd(swp_wd, {opts}) - Swap Working Directory
 
 swd allows you to swap the current Neovim working directory with a new directory.  Send the new directory as a parameter, or wait for the prompt and type the directory of your choice.  swd saves your previous working directory so that it will be swapped back the next time it is called.
 
