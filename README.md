@@ -43,7 +43,12 @@ Known change. Change working directory to your neovim config.
 Ad-hoc change. Type directory at prompt. 
 ```lua
     require 'cwd'.cwd(nil, {})
+
 ````
+or
+```vim
+    :CwdChange
+```
 
 #### 2. - Swap Working Directory
 
@@ -53,13 +58,6 @@ Swap the current Neovim working directory with another directory. Call again to 
 
 __Examples__
 
-Ad-hoc swap. Type directory at prompt. 
-```lua
-    require 'cwd'.swd(nil, {}) -- swap
-
-    require 'cwd'.swd(nil, {}) -- call again to swap back later
-````
-
 Known swap. Swap current working directory with your neovim config.
 ```lua
     require 'cwd'.swd('~/.config/nvim', {}) -- swap
@@ -67,9 +65,13 @@ Known swap. Swap current working directory with your neovim config.
     require 'cwd'.swd('~/.config/nvim', {}) -- call again to swap back later
 ````
 
-        prompt = 'Change directory to: ',
-        cncl_msg = 'Operation cancelled!',
-        err_msg = '  Error - Invalid directory!',
-        cmplt_msg = '  Success - Directory changed to: ',
-        dflt_wd = vim.fn.getcwd(),
-        tilde = '~'
+Ad-hoc swap. Type directory at prompt. 
+```lua
+    require 'cwd'.swd(nil, {}) -- swap
+
+    require 'cwd'.swd(nil, {}) -- call again to swap back later
+````
+or
+```vim
+    :CwdChange
+```
