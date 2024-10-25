@@ -35,13 +35,13 @@ Call setup with the default configuration.
 ```
 
 Call setup with the custom configuration.
-```lu
+```lua
     require 'cwd'.setup({
-        prmpt_msg = prompt for ad-hoc swaps and changes,
-        dflt_prmpt_val = default directory value at prompt,
-        cncl_msg = message on cancel,
-        err_msg = message on error,
-        cmplt_msg = message on complete
+        prmpt_msg = 'prompt for ad-hoc swaps and changes',
+        dflt_prmpt_val = 'default directory value at prompt',
+        cncl_msg = 'message on cancel',
+        err_msg = 'message on error',
+        cmplt_msg = 'message on complete'
     })
 ```
 
