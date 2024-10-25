@@ -42,7 +42,7 @@ local get_wd = function()
 end
 
 local edit_wd = function(new_wd)
-    local trm_wd = new_wd:gsub("%s+", "")
+    local trm_wd = new_wd:gsub('%s+', '')
     local wd = trm_wd:gsub(M.cfg.tilde, vim.env.HOME)
     return wd
 end
