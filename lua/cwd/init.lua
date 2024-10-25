@@ -25,7 +25,7 @@ local wd_prompt = function(cncl_code)
     local opts = {
         prompt = M.cfg.prmpt_msg,
         default = M.cfg.dflt_prmpt_val,
-        completion = "dir" ,
+        completion = 'dir' ,
         cancelreturn = cncl_code
     }
     return vim.fn.input(opts)
