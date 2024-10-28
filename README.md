@@ -51,7 +51,7 @@ There are two main functions:
 
 #### 1. Change Working Directory
 
-__cwd(new_wd, {opts})__
+__cwd(new_wd_path, {opts})__
 
 Change the current Neovim working directory to another directory. Send directory as a parameter, or type directory at the prompt.
 
@@ -75,7 +75,7 @@ Your can also use the CwdChange command for an Ad-hoc change. The command, howev
 
 #### 2. - Swap Working Directory
 
-__swd(swp_wd, {opts})__
+__swd(swp_wd_path, {opts})__
 
 Swap the current Neovim working directory with another directory. Call again to swap back to your prior Neovim working directory. Send directory as a parameter, or type directory at the prompt.
 
