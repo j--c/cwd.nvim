@@ -1,5 +1,5 @@
 vim.api.nvim_create_user_command(
-    'CwdSwapNvim', function() require 'cwd'.swd('~/.config/nvim',{}) end, {}
+    'CwdSwapNvim', function() require 'cwd'.swd(vim.fn.stdpath('config',{}) end, {}
 )
 
 vim.api.nvim_create_user_command(
